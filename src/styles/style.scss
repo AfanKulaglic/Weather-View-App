@@ -1,0 +1,487 @@
+// values
+
+$background-color: #161b24;
+$font-color: rgb(10, 44, 235);
+$card-color: rgba(4, 6, 34, 0.322);
+
+
+// functions
+
+@mixin fullscreen {
+    width: 90vw;
+    height: 100vh;
+    margin: 0px;
+    padding: 5vw;
+    font-size: 10px;
+    font-weight: 400;
+    overflow-y: scroll;
+}
+
+@mixin borderTest {
+    border: 2px solid rgba(255, 0, 0, 0);
+    border-radius: 10px;
+}
+
+@mixin borderCard {
+    border: 2px solid rgba(0, 0, 255, 0);
+    padding: 20px;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0px 20px rgba(0, 0, 0, 0.548);
+    /* Podesite vrednosti prema potrebama */
+    transition: box-shadow 0.3s ease;
+}
+
+@mixin defaultFont {
+    font-size: 18px;
+    font-weight: 450;
+}
+
+// styles
+
+.app {
+    background: $background-color;
+    @include fullscreen();
+    color: white;
+    text-align: start;
+    overflow-x: hidden;
+
+    .title {
+        display: flex;
+        justify-content: start;
+
+        button {
+            margin-left: auto;
+        }
+
+        #title-text {
+            font-size: 19px;
+            font-weight: 500;
+        }
+
+        #button {
+            margin-top: auto;
+            margin-bottom: auto;
+            height: 30px;
+        }
+
+        div {
+            margin-left: auto;
+            margin-top: auto;
+            margin-bottom: auto;
+            display: flex;
+        }
+
+        p {
+            margin-left: 4px;
+            margin-right: 4px;
+            width: 40px;
+            text-align: center;
+            font-size: 12px;
+        }
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0px;
+        margin-bottom: 25px;
+
+        form {
+            display: flex;
+            width: 100%;
+        }
+
+        input {
+            padding: 8px;
+            font-size: 16px;
+            border-radius: 5px;
+            width: 100vw;
+            color: white;
+            height: 35px;
+            border-bottom: 1px solid rgb(57, 99, 179);
+        }
+
+        p {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+
+        .icon {
+            font-size: 17px;
+            margin-top: 4px;
+        }
+    }
+
+    .card-1 {
+        @include borderCard();
+        background-image: $card-color;
+        background-size: cover;
+        overflow: hidden;
+        height: 270px;
+
+        h2 {
+            margin: 0px;
+            text-align: start;
+            @include borderTest();
+            @include defaultFont;
+            font-weight: 650;
+            color: white;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        h5 {
+            margin: 0px;
+            text-align: start;
+            @include defaultFont;
+            @include borderTest();
+            font-size: 17px;
+            margin-left: auto;
+            color: white;
+            font-weight: 350;
+        }
+
+        h3 {
+            margin: 0px;
+            text-align: start;
+            @include defaultFont;
+            @include borderTest();
+            font-size: 15px;
+            margin-left: auto;
+            font-weight: 400;
+        }
+
+        h4 {
+            margin: 0px;
+            text-align: start;
+            @include defaultFont;
+            @include borderTest();
+            font-size: 17px;
+            margin-left: auto;
+            font-weight: 500;
+        }
+
+        h1 {
+            margin: 0px;
+            text-align: start;
+            @include defaultFont;
+            @include borderTest();
+            margin-top: auto;
+            font-size: 40px;
+            font-weight: 800;
+        }
+
+        img {
+            margin-left: auto;
+            margin-top: auto;
+            height: auto;
+            width: 38vw;
+        }
+
+        .card-top {
+            @include borderTest();
+            height: 30%;
+            overflow: visible;
+        }
+
+        .card-bottom {
+            @include borderTest();
+            display: flex;
+            height: 70%;
+            overflow: visible;
+
+            div {
+                margin-top: auto;
+            }
+        }
+    }
+
+    .card-2 {
+        @include borderCard();
+        height: 275px;
+        background: $card-color;
+
+        div {
+            height: 40px;
+
+            div {
+                display: flex;
+            }
+        }
+
+        p {
+            margin-top: 10px;
+            font-size: 16px;
+            margin-bottom: 4px;
+            margin-left: 14px;
+        }
+
+        h2 {
+            margin-top: 10px;
+            font-size: 16px;
+            margin-bottom: 4px;
+            margin-left: auto;
+        }
+
+        #card-2-icon {
+            margin-top: 10px;
+            font-size: 23px;
+            margin-bottom: 4px;
+        }
+    }
+
+    .card-3 {
+        @include borderCard();
+        height: 180px;
+        display: flex;
+        background: $card-color;
+
+        section {
+            @include defaultFont();
+            width: 99%;
+            height: 100%;
+        }
+
+        div {
+            margin-top: -10px;
+            height: 250px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        img {
+            margin-left: auto;
+            margin-right: auto;
+            width: 75px;
+            margin-bottom: 15px
+        }
+
+        h5 {
+            @include defaultFont();
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 40px;
+        }
+
+        p {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        h1 {
+            font-size: 18px;
+            font-weight: 600;
+            margin-top: -8px;
+            margin-left: 2.5%
+        }
+    }
+
+    .card-4 {
+        @include borderCard();
+        background: $card-color;
+        padding: 10px;
+
+        img {
+            width: 100%
+        }
+
+        div {
+            display: flex;
+            justify-content: space-between;
+            margin-left: 5vh;
+            margin-right: 5vh;
+        }
+
+        p {
+            @include defaultFont();
+        }
+    }
+}
+
+.start {
+    @include fullscreen();
+    color: white;
+    position: fixed;
+    height: 100%;
+    text-align: center;
+    background: $background-color;
+
+    .icon {
+        font-size: 50px;
+        margin-right: 10px
+    }
+
+    h2 {
+        font-size: 16px;
+    }
+
+    section {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+    }
+
+    h3 {
+        border: 3px solid #3963b3;
+        font-size: 20px;
+        margin: 0px;
+        font-weight: 450;
+        padding: 10px;
+    }
+
+    div {
+
+        h2 {
+            font-size: 20px;
+            padding-top: 30px;
+        }
+
+        p {
+            font-size: 16px;
+            margin-bottom: 30px;
+        }
+    }
+
+    input {
+        padding: 3px;
+        font-size: 16px;
+        width: 88vw;
+        color: white;
+        height: 35px;
+        border-bottom: 1px solid #3963b3;
+    }
+}
+
+.loading {
+    @include fullscreen();
+    color: white;
+    background-image: url("https://i.ibb.co/FxJfzsv/screen-0.jpg");
+    background-size: cover;
+    background-position: center;
+    padding-top: 30vh;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 768px) {
+    .app {
+
+        .col-1 {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        .card-1 {
+            height: 37vh;
+            width: 40vw;
+
+            img {
+                margin-left: auto;
+                margin-top: auto;
+                height: auto;
+                width: 25vh;
+            }
+        }
+
+        .card-2 {
+            height: 37vh;
+            width: 40vw;
+
+            div {
+                height: 5.5vh;
+                width: 100%;
+            }
+        }
+
+        .card-3 {
+            height: auto;
+
+            div {
+                margin-top: 0vh;
+                height: 100%;
+            }
+        }
+
+        .card-4 {
+            width: 30vw;
+
+            img {
+                width: 30vw
+            }
+        }
+    }
+
+    .start {
+        @include fullscreen();
+        color: white;
+        position: fixed;
+        height: 100%;
+        text-align: center;
+        background: $background-color;
+
+        .icon {
+            font-size: 50px;
+            margin-right: 10px
+        }
+
+        h2 {
+            font-size: 16px;
+        }
+
+        section {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        h3 {
+            border: 3px solid #3963b3;
+            font-size: 20px;
+            margin: 0px;
+            font-weight: 450;
+            padding: 10px;
+        }
+
+        div {
+
+            h2 {
+                font-size: 20px;
+                padding-top: 30px;
+            }
+
+            p {
+                font-size: 16px;
+                margin-bottom: 30px;
+            }
+        }
+
+        input {
+            padding: 3px;
+            font-size: 16px;
+            width: 88vw;
+            color: white;
+            height: 35px;
+            border-bottom: 1px solid #3963b3;
+        }
+    }
+
+    .loading {
+        @include fullscreen();
+        color: white;
+        background-image: url("https://i.ibb.co/FxJfzsv/screen-0.jpg");
+        background-size: cover;
+        background-position: center;
+        padding-top: 30vh;
+        text-align: center;
+    }
+}

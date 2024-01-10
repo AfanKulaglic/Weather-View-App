@@ -1,0 +1,440 @@
+.app {
+  background: #161b24;
+  width: 90vw;
+  height: 100vh;
+  margin: 0px;
+  padding: 5vw;
+  font-size: 10px;
+  font-weight: 400;
+  overflow-y: scroll;
+  color: white;
+  text-align: start;
+  overflow-x: hidden;
+}
+.app .title {
+  display: flex;
+  justify-content: start;
+}
+.app .title button {
+  margin-left: auto;
+}
+.app .title #title-text {
+  font-size: 19px;
+  font-weight: 500;
+}
+.app .title #button {
+  margin-top: auto;
+  margin-bottom: auto;
+  height: 30px;
+}
+.app .title div {
+  margin-left: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  display: flex;
+}
+.app .title p {
+  margin-left: 4px;
+  margin-right: 4px;
+  width: 40px;
+  text-align: center;
+  font-size: 12px;
+}
+.app .navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0px;
+  margin-bottom: 25px;
+}
+.app .navigation form {
+  display: flex;
+  width: 100%;
+}
+.app .navigation input {
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 5px;
+  width: 100vw;
+  color: white;
+  height: 35px;
+  border-bottom: 1px solid rgb(57, 99, 179);
+}
+.app .navigation p {
+  font-size: 18px;
+  margin-top: 10px;
+}
+.app .navigation .icon {
+  font-size: 17px;
+  margin-top: 4px;
+}
+.app .card-1 {
+  border: 2px solid rgba(0, 0, 255, 0);
+  padding: 20px;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0px 20px rgba(0, 0, 0, 0.548);
+  /* Podesite vrednosti prema potrebama */
+  transition: box-shadow 0.3s ease;
+  background-image: rgba(4, 6, 34, 0.322);
+  background-size: cover;
+  overflow: hidden;
+  height: 270px;
+}
+.app .card-1 h2 {
+  margin: 0px;
+  text-align: start;
+  border: 2px solid rgba(255, 0, 0, 0);
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: 450;
+  font-weight: 650;
+  color: white;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.app .card-1 h5 {
+  margin: 0px;
+  text-align: start;
+  font-size: 18px;
+  font-weight: 450;
+  border: 2px solid rgba(255, 0, 0, 0);
+  border-radius: 10px;
+  font-size: 17px;
+  margin-left: auto;
+  color: white;
+  font-weight: 350;
+}
+.app .card-1 h3 {
+  margin: 0px;
+  text-align: start;
+  font-size: 18px;
+  font-weight: 450;
+  border: 2px solid rgba(255, 0, 0, 0);
+  border-radius: 10px;
+  font-size: 15px;
+  margin-left: auto;
+  font-weight: 400;
+}
+.app .card-1 h4 {
+  margin: 0px;
+  text-align: start;
+  font-size: 18px;
+  font-weight: 450;
+  border: 2px solid rgba(255, 0, 0, 0);
+  border-radius: 10px;
+  font-size: 17px;
+  margin-left: auto;
+  font-weight: 500;
+}
+.app .card-1 h1 {
+  margin: 0px;
+  text-align: start;
+  font-size: 18px;
+  font-weight: 450;
+  border: 2px solid rgba(255, 0, 0, 0);
+  border-radius: 10px;
+  margin-top: auto;
+  font-size: 40px;
+  font-weight: 800;
+}
+.app .card-1 img {
+  margin-left: auto;
+  margin-top: auto;
+  height: auto;
+  width: 38vw;
+}
+.app .card-1 .card-top {
+  border: 2px solid rgba(255, 0, 0, 0);
+  border-radius: 10px;
+  height: 30%;
+  overflow: visible;
+}
+.app .card-1 .card-bottom {
+  border: 2px solid rgba(255, 0, 0, 0);
+  border-radius: 10px;
+  display: flex;
+  height: 70%;
+  overflow: visible;
+}
+.app .card-1 .card-bottom div {
+  margin-top: auto;
+}
+.app .card-2 {
+  border: 2px solid rgba(0, 0, 255, 0);
+  padding: 20px;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0px 20px rgba(0, 0, 0, 0.548);
+  /* Podesite vrednosti prema potrebama */
+  transition: box-shadow 0.3s ease;
+  height: 275px;
+  background: rgba(4, 6, 34, 0.322);
+}
+.app .card-2 div {
+  height: 40px;
+}
+.app .card-2 div div {
+  display: flex;
+}
+.app .card-2 p {
+  margin-top: 10px;
+  font-size: 16px;
+  margin-bottom: 4px;
+  margin-left: 14px;
+}
+.app .card-2 h2 {
+  margin-top: 10px;
+  font-size: 16px;
+  margin-bottom: 4px;
+  margin-left: auto;
+}
+.app .card-2 #card-2-icon {
+  margin-top: 10px;
+  font-size: 23px;
+  margin-bottom: 4px;
+}
+.app .card-3 {
+  border: 2px solid rgba(0, 0, 255, 0);
+  padding: 20px;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0px 20px rgba(0, 0, 0, 0.548);
+  /* Podesite vrednosti prema potrebama */
+  transition: box-shadow 0.3s ease;
+  height: 180px;
+  display: flex;
+  background: rgba(4, 6, 34, 0.322);
+}
+.app .card-3 section {
+  font-size: 18px;
+  font-weight: 450;
+  width: 99%;
+  height: 100%;
+}
+.app .card-3 div {
+  margin-top: -10px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+}
+.app .card-3 img {
+  margin-left: auto;
+  margin-right: auto;
+  width: 75px;
+  margin-bottom: 15px;
+}
+.app .card-3 h5 {
+  font-size: 18px;
+  font-weight: 450;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+}
+.app .card-3 p {
+  margin-left: auto;
+  margin-right: auto;
+}
+.app .card-3 h1 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: -8px;
+  margin-left: 2.5%;
+}
+.app .card-4 {
+  border: 2px solid rgba(0, 0, 255, 0);
+  padding: 20px;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0px 20px rgba(0, 0, 0, 0.548);
+  /* Podesite vrednosti prema potrebama */
+  transition: box-shadow 0.3s ease;
+  background: rgba(4, 6, 34, 0.322);
+  padding: 10px;
+}
+.app .card-4 img {
+  width: 100%;
+}
+.app .card-4 div {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 5vh;
+  margin-right: 5vh;
+}
+.app .card-4 p {
+  font-size: 18px;
+  font-weight: 450;
+}
+
+.start {
+  width: 90vw;
+  height: 100vh;
+  margin: 0px;
+  padding: 5vw;
+  font-size: 10px;
+  font-weight: 400;
+  overflow-y: scroll;
+  color: white;
+  position: fixed;
+  height: 100%;
+  text-align: center;
+  background: #161b24;
+}
+.start .icon {
+  font-size: 50px;
+  margin-right: 10px;
+}
+.start h2 {
+  font-size: 16px;
+}
+.start section {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+.start h3 {
+  border: 3px solid #3963b3;
+  font-size: 20px;
+  margin: 0px;
+  font-weight: 450;
+  padding: 10px;
+}
+.start div h2 {
+  font-size: 20px;
+  padding-top: 30px;
+}
+.start div p {
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+.start input {
+  padding: 3px;
+  font-size: 16px;
+  width: 88vw;
+  color: white;
+  height: 35px;
+  border-bottom: 1px solid #3963b3;
+}
+
+.loading {
+  width: 90vw;
+  height: 100vh;
+  margin: 0px;
+  padding: 5vw;
+  font-size: 10px;
+  font-weight: 400;
+  overflow-y: scroll;
+  color: white;
+  background-image: url("https://i.ibb.co/FxJfzsv/screen-0.jpg");
+  background-size: cover;
+  background-position: center;
+  padding-top: 30vh;
+  text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .app .col-1 {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .app .card-1 {
+    height: 37vh;
+    width: 40vw;
+  }
+  .app .card-1 img {
+    margin-left: auto;
+    margin-top: auto;
+    height: auto;
+    width: 25vh;
+  }
+  .app .card-2 {
+    height: 37vh;
+    width: 40vw;
+  }
+  .app .card-2 div {
+    height: 5.5vh;
+    width: 100%;
+  }
+  .app .card-3 {
+    height: auto;
+  }
+  .app .card-3 div {
+    margin-top: 0vh;
+    height: 100%;
+  }
+  .app .card-4 {
+    width: 30vw;
+  }
+  .app .card-4 img {
+    width: 30vw;
+  }
+  .start {
+    width: 90vw;
+    height: 100vh;
+    margin: 0px;
+    padding: 5vw;
+    font-size: 10px;
+    font-weight: 400;
+    overflow-y: scroll;
+    color: white;
+    position: fixed;
+    height: 100%;
+    text-align: center;
+    background: #161b24;
+  }
+  .start .icon {
+    font-size: 50px;
+    margin-right: 10px;
+  }
+  .start h2 {
+    font-size: 16px;
+  }
+  .start section {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  .start h3 {
+    border: 3px solid #3963b3;
+    font-size: 20px;
+    margin: 0px;
+    font-weight: 450;
+    padding: 10px;
+  }
+  .start div h2 {
+    font-size: 20px;
+    padding-top: 30px;
+  }
+  .start div p {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+  .start input {
+    padding: 3px;
+    font-size: 16px;
+    width: 88vw;
+    color: white;
+    height: 35px;
+    border-bottom: 1px solid #3963b3;
+  }
+  .loading {
+    width: 90vw;
+    height: 100vh;
+    margin: 0px;
+    padding: 5vw;
+    font-size: 10px;
+    font-weight: 400;
+    overflow-y: scroll;
+    color: white;
+    background-image: url("https://i.ibb.co/FxJfzsv/screen-0.jpg");
+    background-size: cover;
+    background-position: center;
+    padding-top: 30vh;
+    text-align: center;
+  }
+}/*# sourceMappingURL=style.css.map */
